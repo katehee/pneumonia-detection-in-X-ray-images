@@ -8,10 +8,11 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7554804/
 
 
 
-
 The main objective of this project is to detect pneumonia using chest X-ray images along with deep convolutional neural network. Razaak et al. discussed the challenges of AI-based methodology with regard to medical imaging [2]. Several biomedical image detection techniques have been proposed in the literature to help in diagnosing numerous diseases such as breast and renal cancers [3] [4]. 
 
 For lung diseases in particular, some of proposed techniques used machine learning algorithms and others used deep learning methods for feature extraction and classification. The parameters of these methods are optimized to achieve high accuracy in disease classification. In Antin et al. study, the authors used logistic regression as their supervised machine learning method and DenseNet as their deep learning method to diagnose Pneumonia [1]. From a relatively low scale of The Area Under the Curve (AUC) of logistic regression model, the study conclude that logistic regression does not adequately capture the complexity of X-ray images. Whereas densely connected network having 121 layers (DenseNet) achieves a better result. Deep learning is a better advancement over machine learning as it can easily operate on images and extract the features responsible to classify the disease.  
+
+There are also several recent works have proved the benefit of data augmentation in improving CNN performance for various deep learning applications [9].  Data Augmentation is a simple method to increase the dataset size by adding more invariant samples and thus reduce overfitting [10] [11]. In Monshi et al. study, they demonstrated that the optimization of data augmentation and CNN hyperparameters is an effective tool to extract features from chest X-rays [12]. The CNN architectures used in this study were VGG-19 and ResNet50 and they proposed that such optimization increased the accuracy of both models. In addition, Nishio et al. also proposed a computer-aided diagnosis system for detection of COVID-19 pneumonia [13]. Their proposed model utilized VGG16 and studied the effect of conventional and mix-up method of chest X-ray image augmentation. Their results proved that the combinational conventional and mix-up augmentation methods were more effective than single type or no augmentation method. The conventional data augmentation method included rotation (+/- 15), x-axis and y-axis shift (+/- 15%), horizontal flipping, scaling, and shear transformation. The mix-up augmentation was set to 0.1. 
 
 In Hashmi et al.’s work [6], pre-trained ResNet50 multilayer architecture was used to identify pneumonia on chest X-ray images. The dataset used in this study is identical to the dataset I used for this project. As the dataset contain insufficient number of X-ray images, data augmentation techniques were deployed to increase the size of the training dataset. The authors further scale up ResNet50 model by compound scaling. Training images were resized to 224*224 and images of healthy chest X-rays were augmented twice with augmentation settings (crop and pad = 0.25, Horizontal shift =0.15, Rotation = 35, Vertical shift = 0.2). The most optimum results were obtained with the learning rate of 0.001 and Stochastic gradient descent optimizer. The proposed compound scaled ResNet50 attained a test accuracy of 98.14%, an AUC score of 99.71 and an F1 score of 98.3 on the test data from the Guangzhou Women and Children’s Medical Center pneumonia dataset.
 
@@ -33,4 +34,13 @@ The authors of [5] presented several transfer learning methods as feature extrac
 [7] Rajaraman S, Candemir S, Kim I, et al. Visualization and interpretation of convolutional neural network predictions in detecting pneumonia in pediatric chest radiographs. Appl Sci. 2018;8(10):1715.
 
 [8] Batista, G.E.A.P.A.; Prati, R.C.; Monard, M.C. A study of the behavior of several methods for balancing machine learning training data.
+
+[9] Calderon-Ramirez S. 2020. Correcting Data Imbalance for Semi-supervised Covid-19 Detection Using X-Ray Chest Images. 
+[10] Shorten C., Khoshgoftaar T.M. A survey on image data augmentation for deep learning. 
+[11] Taylor L., Nitschke G. 2017. Improving Deep Learning Using Generic Data Augmentation.
+
+[12] Monshi MMA, Poon J, Chung V, Monshi FM (2021) Covidxraynet: Optimizing data augmentation and cnn hyperparameters for improved covid-19 detection from cxr. Computers in Biology and Medicine 133:104375
+
+[13] Nishio, M., Noguchi, S., Matsuo, H. et al. Automatic classification between COVID-19 pneumonia, non-COVID-19 pneumonia, and the healthy on chest X-ray image: combination of data augmentation methods. Sci Rep 10, 17532 (2020). https://doi.org/10.1038/s41598-020-74539-2
+![image](https://user-images.githubusercontent.com/89289320/174519669-8560f0af-0f66-405b-86cd-903b76abf9b9.png)
 
