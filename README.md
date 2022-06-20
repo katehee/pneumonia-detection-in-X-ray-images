@@ -42,5 +42,5 @@ The authors of [5] presented several transfer learning methods as feature extrac
 [12] Monshi MMA, Poon J, Chung V, Monshi FM (2021) Covidxraynet: Optimizing data augmentation and cnn hyperparameters for improved covid-19 detection from cxr. Computers in Biology and Medicine 133:104375
 
 [13] Nishio, M., Noguchi, S., Matsuo, H. et al. Automatic classification between COVID-19 pneumonia, non-COVID-19 pneumonia, and the healthy on chest X-ray image: combination of data augmentation methods. Sci Rep 10, 17532 (2020). https://doi.org/10.1038/s41598-020-74539-2
-![image](https://user-images.githubusercontent.com/89289320/174519669-8560f0af-0f66-405b-86cd-903b76abf9b9.png)
+
 
