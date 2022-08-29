@@ -67,3 +67,5 @@
 - image augmentation, model optimization, visualization of feature maps 
 - confusion matrix, classification report 
 
+<img width="479" alt="Screen Shot 2022-08-28 at 9 48 32 PM" src="https://user-images.githubusercontent.com/89289320/187107049-520cdef4-b336-4623-9289-8bcbbd8db432.png">
+
